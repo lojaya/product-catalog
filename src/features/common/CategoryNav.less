@@ -1,0 +1,42 @@
+@import '../../styles/mixins';
+
+.common-category-nav {
+  width: 100%;
+  background-color: #fff;
+  color: #333;
+  user-select: none;
+  border-bottom: 1px solid #ddd;
+
+  .scroll-category-menu {
+    position: relative;
+    width: 480px;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    padding-left: 240px;
+    padding-right: 240px;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    a {
+      color: #333;
+      text-align: center;
+      padding: 10px 15px;
+      text-decoration: none;
+      display: inline-block;
+      border-bottom: 2px solid transparent;
+
+      &.active {
+        border-bottom: 2px solid #e91e63;
+      }
+
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+}

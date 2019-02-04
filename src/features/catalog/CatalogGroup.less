@@ -1,0 +1,59 @@
+@import '../../styles/mixins';
+
+.catalog-group-wrapper {
+  .group-list {
+    margin: 0 auto;
+
+    > .row {
+      margin: 0;
+      > div {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        background-color: #fff;
+      }
+    }
+
+    .catalog-group {
+      &.wanita {
+        background-color: rgb(247, 220, 229);
+      }
+
+      &.kecantikan {
+        background-color: rgb(252, 226, 225);
+      }
+
+      &.pria {
+        background-color: rgb(185, 229, 233);
+      }
+
+      .group-title {
+        font-weight: 600;
+      }
+
+      > div {
+        padding: 0;
+      }
+
+      img {
+        height: 60px;
+      }
+    }
+
+    .single-catalog {
+      > div {
+        box-shadow: 1px 0 0 0 #eee, 0 1px 0 0 #eee, 1px 1px 0 0 #eee, 1px 0 0 0 #eee inset,
+          0 1px 0 0 #eee inset;
+
+        a {
+          padding: 18px;
+          display: block;
+          color: #333;
+
+          &:hover {
+            color: #777;
+          }
+        }
+      }
+    }
+  }
+}
